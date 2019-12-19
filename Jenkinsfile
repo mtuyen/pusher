@@ -20,7 +20,6 @@ node {
                     println(response)
                 }
             } else {
-                
                 echo "Ignore branch ${env.BRANCH_NAME}"
             }
         }
