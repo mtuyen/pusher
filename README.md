@@ -1,4 +1,4 @@
 ## pusher
 
-New jenkins
+New jenkins config
 
