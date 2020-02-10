@@ -1,4 +1,4 @@
 ## pusher
 
-New jenkins version
+New jenkins
 
