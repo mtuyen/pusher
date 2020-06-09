@@ -3,6 +3,8 @@ node {
         withCredentials([string(credentialsId: 'bitbucket-msl-parser-connection-string', variable: 'endpoint')]) {
             def scmVar = checkout scm
             def gitBranch = scmVar.GIT_BRANCH
+            
+            println ${scmVar}
 
             if (gitBranch ==~ /.*master/ || gitBranch ==~ /.*develop/) {
                 def bitbucketBranch = gitBranch ==~ /.*master/ ? "master" : "develop"
